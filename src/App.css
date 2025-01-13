@@ -1,38 +1,117 @@
-.App {
+body{
+
+}
+
+.App > h1 {
+
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+html{
+  background-color: #2b2b2b;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.line{
+  text-decoration: line-through;
 }
+.no-line{
+  text-decoration: none;
+}
+
+.todo-cont{
+  position: absolute;
+  height: 80vh;
+  width: 40vw;
+  border: 2px solid red;
+  border-radius: 35px;
+  transform: translateX(75%);
+  background-color: #3d3d3d;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color:  #eaeaea;
+}
+
+.todo-cont > h1{
+  text-align: center;
+}
+
+.input__section{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  
+}
+
+.input__field{
+  width: 500px;
+  height: 25px;
+  font-size: 16px;
+  padding-left: 7px;
+  border-radius: 8px;
+  border: 3px solid #6cace4;
+}
+
+
+button{
+  height: 35px;
+  width:  73px;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 4px solid green;
+  background-color: #20c997;
+
+}
+
+button:hover{
+  background-color: #1aa179;
+  font-weight: bold;
+}
+
+.todos{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.todo{
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  margin-left: 21px;
+  justify-content: space-between;
+  
+}
+
+label{
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.todo-btns{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.todo-text > span{
+  font-size: 30px;
+}
+
+.check{
+  margin-right: 17px;
+}
+
+.edit__del{
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: #105f48;
+}
+
+
+
+
